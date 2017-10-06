@@ -76,7 +76,7 @@ function makeMove(board, move) {
 // loop through all possible moves
 // if valid, makeMove --> makeMove(nextBoard)
 
-function play(board, moves) {
+function drawDown(board, moves) {
     if (gameOver(board, moves)) {
         const currWin = {
             1: 0,
@@ -93,7 +93,7 @@ function play(board, moves) {
         for (let i = 0; i < moves.length; i++) {
             if (validMove(board, moves[i])) {
                 const nextBoard = makeMove(board, moves[i]);
-                const result = play(nextBoard, moves);
+                const result = drawDown(nextBoard, moves);
                 wins[1] += result[1];
                 wins[2] += result[2];
             }
@@ -102,7 +102,7 @@ function play(board, moves) {
     }
 }
 
-// console.log(play([6, 4, 2, 4], [
+// console.log(drawDown([6, 4, 2, 4], [
 //     [-2, -2, 1, 0],
 //     [-4, -4, 0, 0],
 //     [0, 0, -2, -2]

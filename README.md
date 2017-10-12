@@ -16,3 +16,6 @@ The 2-player game of Drawdown is played with N groups of stones. There is a grou
 At the start of each game a set of size k containing all valid moves is presented. Moves can be re-used. Each move is represented by an array of N integers, with each integer representing the number of stones at the corresponding position the move adds or removes from the collection. All moves are guaranteed to reduce the total number of stones, even though they may increase the number of stones within an individual group.
 
 After no more moves can be completed (i.e. there are not enough of the required types of stones to remove to complete any move), the player with the greater number of their own stones remaining is declared the victor. If both players have the same number of stones, then player 2 wins to compensate for the disadvantage of going second. 
+
+## parse_input(input_string)
+Given a string that starts with the token "breadandbutter", parse out a root command and command arguments that are included in the string.

@@ -19,3 +19,6 @@ After no more moves can be completed (i.e. there are not enough of the required 
 
 ## parse_input(input_string)
 Given a string that starts with the token "breadandbutter", parse out a root command and command arguments that are included in the string.
+
+## normalizePath(str)
+Please write a method to normalize a string which represents a file path.

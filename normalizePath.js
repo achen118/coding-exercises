@@ -20,9 +20,9 @@ For the purposes of this question, normalizing means:
 // "foo/bar/../baz"
 
 
-function normalizeString(path) {
+function normalizePath(str) {
     
-    let directories = path.split("/");
+    let directories = str.split("/");
     // ["foo", "bar", "..", "baz"]
     let i = directories.length;
     while (i--) {
@@ -41,7 +41,7 @@ function normalizeString(path) {
 }
 
 
-// console.log(normalizeString("foo/./bar/../baz/.."));
-// console.log(normalizeString("foo/bar/../baz"));
-// console.log(normalizeString("../foo/bar"));
-// console.log(normalizeString("foo/./bar"));
+// console.log(normalizePath("foo/./bar/../baz/.."));
+// console.log(normalizePath("foo/bar/../baz"));
+// console.log(normalizePath("../foo/bar"));
+// console.log(normalizePath("foo/./bar"));

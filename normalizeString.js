@@ -20,7 +20,6 @@ For the purposes of this question, normalizing means:
 // "foo/bar/../baz"
 
 
-
 function normalizeString(path) {
     
     let directories = path.split("/");

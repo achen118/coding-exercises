@@ -22,3 +22,7 @@ Given a string that starts with the token "breadandbutter", parse out a root com
 
 ## normalizePath(str)
 Please write a method to normalize a string which represents a file path.
+
+## completedSequence(keycode)
+Implement a function that detects input of the following sequence and returns true when the sequence is completed, false otherwise:<br>
+Up, Up, Down, Down, Left, Right, Left, Right, B, A, Start
